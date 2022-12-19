@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails</title>
+</head>
+<body>
+    <!------------navbar information----------->
+    <div class = "heading">
+        <div class = "item">
+            <h2 class = "ui header">
+                <i class = "orange ticket icon"></i>
+                <div class = "content">COCKTAILS</div>
+                <div class = "sub header" id = "subtitle">ORDER COCKTAILS</div>
+            </h2>
+        </div>
+    </div>
+    <!--------------side information------------------>
+    <div class=" ui centred grid">
+        <div class="four wide column">
+            <div class="list-container">
+                <ul class="ui divided list" id="cocktails">
+                    <li class="cocktail item">Cocktails names will display here.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!---------poster information------>
+    <div class="four wide column">
+        <img 
+            id="poster"
+            src="assets/placeholderImage.png"
+            alt="[COCKTAIL NAME]"
+        />
+    </div>
+    <!------------information details-------->
+    <div class="four wide column">
+        <div class="ui cards" id="showing">
+            <div class="cards">
+                <div id="title" class="title">[COCKTAIL NAME]</div>
+                <div id="price" class="meta">[PRICE] shillings</div>
+                <div class="content">
+                    <div class="description">
+                        <div id="cocktail info">[INSERT COCKTAIL DESCRIPTION HERE]</div>
+                        <SPan id="showprice" class="ui label">[SHOWPRICE]</SPan>
+                        <SPan id="ticket-num">[X]</SPan>remaining tickets
+                    </div>
+                </div>
+                <div class="extra content">
+                    <button id="buy-cocktail" class="ui red button">   
+                       Buy Cocktail
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+</html>
