@@ -1,56 +1,39 @@
-body {
-    background-color: #ebebeb;
-  }
-  
-  .heading {
-    background-color: #13379a;
-    margin-bottom: 30px;
-    padding: 5px 0px 5px 15px;
-  }
-  
-  .title {
-    background-color: #333333;
-    padding: 5px;
-    color: white;
-  }
-  
-  #price {
-    background-color: #333333;
-    color: #3e8fde;
-    padding: 0px 0px 5px 5px;
-  }
-  
-  .content {
-    color: #3e8fde;
-  }
-  
-  #subtitle {
-    color: white;
-    margin-left: 55px;
-  }
-  
-  #showing {
-    margin-left: 20px;
-  }
-  
-  #films li::before {
-    content: "";
-  }
-  
-  .film {
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-  
-  .sold-out {
-    color: lightgray;
-  }
-  
-  img {
-    max-width: 25vw;
-  }
-  
-  #cocktail-info {
-    padding-bottom: 15px;
-  }
-  
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins",sans-serif;
+}
+body{
+  height: 100vh;
+  background:#5372f0;
+}
+.container{
+  position:absolute;
+  top: 20%;
+  left: 50%;
+  width: 90vw;
+  max-width: 37.5em;
+  background-color: #fff;
+  padding: 1.8em;
+  border-radius: 0.6em;
+}
+.search-container{
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 2em;
+  margin-bottom: 1.2em;
+}
+.search-container button{
+  font-size: 1em;
+  border-radius: 2em;
+  background-color: #5372f0;
+  border: none;
+  outline: none;
+  color: #ffff;
+}
+#result img{
+  display: block;
+  margin: auto;
+  max-width: 16.0em;
+}
