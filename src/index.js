@@ -1,7 +1,9 @@
 let result =document.getElementById("result");
 let searchButton = document.getElementById("searchButton");
 let url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-let userInput = document.getElementById("user-input").value;
+
+let getInfo = () =>{
+    let userInput = document.getElementById("user-input").value;
 if (userInput.length ==0){
     result.innerHTML = `<h3 class="msg">input field cannot be empty</h3>`;
 }else{
@@ -40,6 +42,20 @@ if (userInput.length ==0){
         <h3>Instructions:</h3>
         <p>${myDrink.strInstructions}</p>
         `;
+        let ingredientsContainer =document.querySelector(".ingredients");
+        ingredients.forEach((item) => {
+            let listItem = document.createElement("li");
+            listItem.innerText = item;
+            ingredientsContainer.appendChild(listItem);
+        });
         
+    })
+    .catch(() =>{
+        result.innerHTML = `<h3 class = "msg"> enter a valid input</h3>`;
     });
 }
+};
+document.addEventListener("DOMContentLoaded", getInfo);
+searchButton.addEventListener("click", getInfo);
+
+
