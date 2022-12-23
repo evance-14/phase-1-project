@@ -33,7 +33,13 @@ if (userInput.length ==0){
         }
         console.log(ingredients);
         result.innerHTML =`
-        <img src=${myDrink.strDrinkThumb}>`
+        <img src=${myDrink.strDrinkThumb}>
+        <h2>${myDrink.strDrink}</h2>
+        <h3>Ingredients:</h3>
+        <ul class ="ingredients"></ul>
+        <h3>Instructions:</h3>
+        <p>${myDrink.strInstructions}</p>
+        `;
         
     });
 }
