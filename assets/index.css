@@ -10,13 +10,13 @@ body{
 }
 .container{
   position:absolute;
-  top: 20%;
-  left: 50%;
-  width: 90vw;
-  max-width: 37.5em;
+  top: 30%;
+  left: 30%;
   background-color: #fff;
   padding: 1.8em;
   border-radius: 0.6em;
+  max-width: 37.5em;
+  transform: translate(-50%,-40%);
 }
 .search-container{
   display: grid;
@@ -36,4 +36,10 @@ body{
   display: block;
   margin: auto;
   max-width: 16.0em;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins",sans-serif;
 }
