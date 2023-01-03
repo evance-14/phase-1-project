@@ -7,22 +7,26 @@
 body{
   height: 100vh;
   background:#080d23;
+  
 }
 .container{
   position:absolute;
-  top: 30%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
   background-color: #fff;
   padding: 1.8em;
   border-radius: 0.6em;
   max-width: 37.5em;
-  transform: translate(-50%,-40%);
+  transform: translate(-50%,-50%);
+  width: 90vw;
+  
 }
 .search-container{
   display: grid;
   grid-template-columns: 9fr 3fr;
   gap: 2em;
   margin-bottom: 1.2em;
+  
 }
 .search-container button{
   font-size: 1em;
@@ -31,11 +35,13 @@ body{
   border: none;
   outline: none;
   color: #ffff;
+  
 }
 #result img{
   display: block;
   margin: auto;
   max-width: 16.0em;
+  
 }
 *{
   padding: 0;
@@ -43,3 +49,26 @@ body{
   box-sizing: border-box;
   font-family: "poppins",sans-serif;
 }
+
+#result h2{
+  font-size: 1.25em;
+  text-align: center;
+  letter-spacing: 0.05em;
+  position: relative;
+  font-weight: 600;
+}
+
+#result p{
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.0em;
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    font-size: 14px;
+  }
+}
+
+
+  
