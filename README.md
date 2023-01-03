@@ -5,7 +5,7 @@
 ## Project Description 
 
 Today I will be building an app for Cocktail. I will be
-using a public API  from CocktailDB and building the frontend part for the app,using HTML, CSS, and JavaScript which will communicate with a public API.
+using a public API  from CocktaildB and building the front-end part for the app,using HTML, CSS, and JavaScript which will communicate with a public API.
 
 # SetUp Instruction
 1. clone the repository(git clone (git url)
@@ -28,8 +28,8 @@ Then, open the `index.html` file on the browser to run the application.
 Write the code in the `src/index.js` file. The base URL for your API will be
 ([https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita]).
 
-When you click on search button to search for cocktails from the app  it will give you the cocktail name,cocktail ingredients including the cocktail measure of how to make the cocktail for the cocktail clients who want something good.
+When you click on search button to search for cocktails from the app  it will give you the cocktail name,cocktail ingredients including the cocktail measure  and instructions of how to make the cocktail for the cocktail clients who want something good.
 
 
 # Contact Information
-.Email: kiropevans097@gmail.com
+Email: kiropevans097@gmail.com
