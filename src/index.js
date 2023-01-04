@@ -1,6 +1,7 @@
 let result =document.getElementById("result");
 let searchButton = document.getElementById("search-button");
 let url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+//assigning the getInfo to variable
 
 let getInfo = () =>{
     let userInput = document.getElementById("user-input").value;
@@ -58,9 +59,10 @@ if (userInput.length ==0){
     });
 }
 };
+//adding some event listeners to our function.
 document.addEventListener("DOMContentLoaded", getInfo);
 searchButton.addEventListener("click", getInfo);
-
+//adding POST REQUEST.
 const link = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=/add';
 
 const data = {
