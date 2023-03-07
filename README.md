@@ -33,3 +33,5 @@ When you click on search button to search for cocktails from the app  it will gi
 
 # Contact Information
 Email: kiropevans097@gmail.com
+
+If you want to view this project click on this link https://evance-14.github.io/phase-1-project/
